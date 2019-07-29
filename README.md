@@ -1,2 +1,2 @@
 # SoupOn
-Rails CRUD project
+Mod 2 - Rails CRUD project
