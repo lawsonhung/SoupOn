@@ -1,0 +1,22 @@
+<h1>Create a soup here</h1>
+
+
+<br>
+
+<%= form_for @soup do |f| %>
+    
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+    <br>
+
+    <%= f.label :ingredients %>
+    <%= f.text_field :ingredients %>
+    <br>
+
+    <%= f.label :img_url %>
+    <%= f.text_field :img_url %>
+    <br>
+    
+    <%= f.submit %>
+
+<% end %>

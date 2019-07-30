@@ -1,0 +1,16 @@
+<h1>More information about this soup <%= @soup.name %> </h1>
+
+<%= button_to "Edit your #{@soup.name} here", edit_soup_path, method: :get %>
+<%= link_to "List of soups", soups_path %>
+
+<p>
+Name: <%= @soup.name %>
+</p>
+
+<p>
+Ingredients: <%= @soup.ingredients %>
+</p>
+
+<img src="<%= @soup.img_url %>" alt="Soup image" >
+
+<%= button_to "Trash this soup", soup_path(@soup), method: :delete %>
