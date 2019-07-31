@@ -4,7 +4,9 @@
 <p>
 Rating By: <%= @review.user.name%>
 <br>
-Comment: <%= @review.comment%> 
+Comment: <%= @review.comment%>
 <br>
 Rating: <%= @review.rating%>
 </p>
+
+<%= link_to "Edit this review", edit_review_path %>
