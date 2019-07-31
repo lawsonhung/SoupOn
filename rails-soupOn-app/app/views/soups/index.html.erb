@@ -1,0 +1,15 @@
+<h1>This is an index page to view all our soups</h1>
+
+<h2><%= button_to "Create a new soup here", new_soup_path, method: :get %></h2>
+
+<ul>
+    <% @soups.each do |soup| %>
+        <li>
+            <%= link_to soup.name, soup %>
+        </li>
+    <% end %>
+</ul>
+
+<%= link_to 'Check Out All of the Users', users_path %>
+<br>
+<%= link_to 'Check Out All of the Reviews for our soups', reviews_path %>

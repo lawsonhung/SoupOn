@@ -1,0 +1,17 @@
+<h1>Create a New Reivew</h1>
+<%= form_for @review do |f|%>
+
+<%= f.label :rating %>
+<%= f.number_field :rating %>
+
+<%= f.label :comment %>
+<%= f.text_field :comment %>
+
+<%= f.label :name %>
+<%= f.collection_select :user_id,@users,:id,:name %>
+
+<%= f.label :soup_Name %>
+<%= f.collection_select :soup_id,@soups,:id,:name %>
+
+<%= f.submit%>
+<%end%>

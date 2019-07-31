@@ -1,0 +1,23 @@
+<h1>Edit soup here</h1>
+
+<%= button_to "Return to see all your soups", soups_path, method: :get %>
+
+<br>
+
+<%= form_for @soup do |f| %>
+    
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+    <br>
+
+    <%= f.label :ingredients %>
+    <%= f.text_field :ingredients %>
+    <br>
+
+    <%= f.label :img_url %>
+    <%= f.text_field :img_url %>
+    <br>
+    
+    <%= f.submit %>
+
+<% end %>
