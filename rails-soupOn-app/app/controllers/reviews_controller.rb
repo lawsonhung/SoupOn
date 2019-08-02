@@ -10,6 +10,8 @@ class ReviewsController < ApplicationController
 
     def edit
         find_review
+        @users= User.all
+        @soups= Soup.all
     end
 
     def new
