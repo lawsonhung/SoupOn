@@ -7,4 +7,4 @@ Name: <%= @user.name %>
 Location: <%= @user.location %>
 </p>
 
-<%= link_to 'Return to All Users', users_path %>
+<%= button_to 'Return to All Users', users_path, method: :get %>

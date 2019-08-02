@@ -8,5 +8,4 @@ Comment: <%= @review.comment%>
 <br>
 Rating: <%= @review.rating%>
 </p>
-
-<%= link_to "Edit this review", edit_review_path %>
+<%= button_to 'Edit the Review for this soup', edit_review_path(@review), method: :get %>

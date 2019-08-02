@@ -1,10 +1,10 @@
 <h1>List of all the Reviews</h1>
 
 <% @reviews.each do |review|%>
-<%= link_to review.soup.name, review %>
+<%= button_to review.soup.name, review, method: :get %>
 <br>
 <%end%>
 
 <br>
 
-<%= link_to 'Create a New Review', new_review_path %>
+<%= button_to 'Create a New Review', new_review_path, method: :get %>
