@@ -4,8 +4,15 @@
 h1, img {
     text-align: center;
 }
-// 
+//
 // body {
 //  background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e8211004-f079-40db-b1e8-79870b7d555b/d5qotca-42dd3920-829f-48a5-9439-132f5dfd754a.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2U4MjExMDA0LWYwNzktNDBkYi1iMWU4LTc5ODcwYjdkNTU1YlwvZDVxb3RjYS00MmRkMzkyMC04MjlmLTQ4YTUtOTQzOS0xMzJmNWRmZDc1NGEucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.QHTdhYrQOLJnKCdTa_tC0PajFxW0fcZdmbgtzorgZAk");
 //  background-size: cover;
 // }
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
