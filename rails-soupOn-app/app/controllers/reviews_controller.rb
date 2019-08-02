@@ -1,7 +1,7 @@
 class ReviewsController < ApplicationController
 
     def index
-       @reviews = Review.all 
+       @reviews = Review.all
     end
 
     def show
@@ -20,7 +20,12 @@ class ReviewsController < ApplicationController
 
     def create
         @review = Review.create(review_params)
-        redirect_to @review
+        if @review.valid?
+          redirect_to @review
+        else
+          flash[:errors] = @review.errors.full_messages
+          redirect_to new_review_path
+        end
     end
 
     def update

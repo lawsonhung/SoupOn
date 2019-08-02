@@ -18,13 +18,23 @@ class SoupsController < ApplicationController
 
     def create
         @soup = Soup.create(soup_params)
-        redirect_to soup_path(@soup)
+        if @soup.valid?
+          redirect_to @soup
+          else
+          flash[:errors] = @soup.errors.full_messages
+          redirect_to new_soup_path
+        end
     end
 
     def update
         find_soup
         @soup.update(soup_params)
-        redirect_to @soup
+        if @soup.valid?
+          redirect_to @soup
+          else
+          flash[:errors] = @soup.errors.full_messages
+          redirect_to edit_soup_path
+        end
     end
 
     def destroy

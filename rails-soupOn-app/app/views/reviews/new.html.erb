@@ -1,4 +1,16 @@
 <h1>Create a New Reivew</h1>
+
+<% if flash[:errors] %>
+  <ul>
+    <% flash[:errors].each do |error| %>
+      <li>
+        <%= error %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+
 <%= form_for @review do |f|%>
 
 <%= f.label :rating %>

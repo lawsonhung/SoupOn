@@ -1,4 +1,14 @@
 <h1>Create new user here:</h1>
+<% if flash[:errors] %>
+  <ul>
+    <% flash[:errors].each do |error| %>
+      <li>
+        <%= error %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
 
 <%= form_for @user do |f| %>
 <%= f.label :name %>:
